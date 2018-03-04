@@ -1,0 +1,99 @@
+/* 
+    newcss
+    Created on : 27/06/2017, 21:12:03
+    Author     : Richard de Deus - MI Agência WEB
+*/
+
+/*lista(paleta) de cores*/
+
+
+/* Resets and Overrides*/
+
+*{
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+strong, b{font-weight: bold;}
+
+
+
+.radius{
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}
+
+.shadow{
+    -moz-box-shadow:0px 0px 5px #333;
+    -webkit-box-shadow:0px 0px 5px #333;
+    box-shadow:0px 0px 5px #333;
+}
+
+
+/*links e types*/
+body{
+    font-family: "Lucida Sans", Verdana, sans-serif;
+    font-size: 100%;
+}
+
+a:link, a:active, a:visited{text-decoration: none;}
+a:hover{
+    color:#999;
+    -webkit-transition: all 250ms ease 15ms;
+    -moz-transition: all 250ms ease 15ms;
+    -o-transition: all 250ms ease 15ms;
+    transition: all 250ms ease 15ms;
+}
+*:focus{outline:none;}
+a img{border:none;}
+
+h1{}
+h1 a{}
+h1 a:hover{}
+
+h2{}
+h2 a{}
+h2 a:hover{}
+
+ul{list-style: none;}
+
+/*layout*/
+#page{}
+#topinho{}
+#header{}
+#nav{}
+#faixa{}
+#content{}
+#aside{}
+#footer{}
+#copyright{}
+
+/*callout boxes*/
+#callout-alpha{}
+#callout-beta{}
+
+/*call-to-action*/
+.call-to-action{}
+
+/*form*/
+label{}
+input{}
+input.button{}
+
+/*messages*/
+.trigger{position: relative; padding: 20px; color: #333; background: #ccc; border: 1px solid #333; font:400 14px 'Verdana', sans-serif;}
+.trigger{border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.trigger .ajax_close{position: absolute; right: 10px; cursor: pointer; top: 10px; background: black; width: 20px; height: 20px; display: none;}
+.trigger.accept{background-color: #E5F8CE; border-color: #D0F1A6;}
+.trigger.inform{background-color: #D1ECF7; border-color: #BCDFEF;}
+.trigger.alert{background-color: #FFF6BF; border-color: #FCEB77;}
+.trigger.error{background-color: #FAD0D0; border-color: #F6ABAB;}
+
+/*misc*/
+.left{float: left;}
+.right{float: right;}
+.clear{clear:both;}
+
+

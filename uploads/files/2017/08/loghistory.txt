@@ -1,0 +1,135 @@
+[2017-07-24 04:44:05.792] [000002] [local] [MYSQL]
+SHOW VARIABLES LIKE 'lower_case_%'
+
+[2017-07-24 04:44:05.870] [000002] [local] [MYSQL]
+SHOW VARIABLES LIKE 'profiling'
+
+[2017-07-24 04:44:05.871] [000002] [local] [MYSQL]
+SHOW DATABASES
+
+[2017-07-24 04:44:09.909] [000003] [local] [MYSQL]
+SELECT @@character_set_database, @@collation_database
+
+[2017-07-24 04:44:09.967] [000003] [local] [MYSQL]
+SHOW FULL TABLES WHERE Table_type != 'VIEW'
+
+[2017-07-24 04:44:31.181] [000004] [local] [MYSQL]
+SHOW TABLE STATUS LIKE 'ws_categories'
+
+[2017-07-24 04:44:31.831] [000004] [local] [MYSQL]
+SHOW ENGINES
+
+[2017-07-24 04:44:31.859] [000003] [local] [MYSQL]
+SHOW CREATE TABLE `ws_categories`
+
+[2017-07-24 04:44:31.970] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` LIMIT 0, 1000
+
+[2017-07-24 04:44:31.985] [000004] [local] [MYSQL]
+SHOW COLUMNS FROM `wsphp`.`ws_categories`
+
+[2017-07-24 04:44:54.443] [000004] [local] [MYSQL]
+INSERT INTO `ws_categories` (`category_name`) VALUES ('artigos')
+
+[2017-07-24 04:44:54.826] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='1') LIMIT 1
+
+[2017-07-24 04:45:03.449] [000004] [local] [MYSQL]
+INSERT INTO `ws_categories` (`category_name`) VALUES ('noticias')
+
+[2017-07-24 04:45:03.535] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='2') LIMIT 1
+
+[2017-07-24 04:45:10.627] [000004] [local] [MYSQL]
+INSERT INTO `ws_categories` (`category_name`) VALUES ('esportes')
+
+[2017-07-24 04:45:10.678] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='3') LIMIT 1
+
+[2017-07-24 04:45:16.571] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_title`='Artigos' WHERE (`category_id`='1')
+
+[2017-07-24 04:45:16.638] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='1') LIMIT 1
+
+[2017-07-24 04:45:26.864] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_title`='Notícias' WHERE (`category_id`='2')
+
+[2017-07-24 04:45:26.931] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='2') LIMIT 1
+
+[2017-07-24 04:45:35.027] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_title`='Esportes' WHERE (`category_id`='3')
+
+[2017-07-24 04:45:35.107] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='3') LIMIT 1
+
+[2017-07-24 04:46:03.002] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_date`='2017-07-24 04:45:57' WHERE (`category_id`='1')
+
+[2017-07-24 04:46:03.378] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='1') LIMIT 1
+
+[2017-07-24 04:46:13.623] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_date`='2017-07-23 04:46:05' WHERE (`category_id`='2')
+
+[2017-07-24 04:46:13.695] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='2') LIMIT 1
+
+[2017-07-24 04:46:22.573] [000004] [local] [MYSQL]
+UPDATE `ws_categories` SET `category_date`='2017-07-22 04:46:14' WHERE (`category_id`='3')
+
+[2017-07-24 04:46:23.634] [000004] [local] [MYSQL]
+SELECT * FROM `ws_categories` WHERE (`category_id`='3') LIMIT 1
+
+[2017-07-24 04:51:00.341] [000007] [local] [MYSQL]
+SHOW TABLE STATUS LIKE 'ws_siteviews_online'
+
+[2017-07-24 04:51:00.751] [000007] [local] [MYSQL]
+SHOW ENGINES
+
+[2017-07-24 04:51:00.752] [000003] [local] [MYSQL]
+SHOW CREATE TABLE `ws_siteviews_online`
+
+[2017-07-24 04:51:00.834] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` LIMIT 0, 1000
+
+[2017-07-24 04:51:00.839] [000007] [local] [MYSQL]
+SHOW COLUMNS FROM `wsphp`.`ws_siteviews_online`
+
+[2017-07-24 04:53:52.423] [000007] [local] [MYSQL]
+UPDATE `ws_siteviews_online` SET `online_startview`='2017-07-24 00:39:57', `online_endview`='2017-07-25 00:59:57' WHERE (`online_id`='1')
+
+[2017-07-24 04:53:52.424] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` WHERE (`online_id`='1') LIMIT 1
+
+[2017-07-24 04:54:19.180] [000007] [local] [MYSQL]
+INSERT INTO `ws_siteviews_online` (`online_startview`, `online_endview`) VALUES ('2017-07-24 05:54:00', '2017-07-26 04:54:08')
+
+[2017-07-24 04:54:19.575] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` WHERE (`online_id`='2') LIMIT 1
+
+[2017-07-24 04:54:38.070] [000007] [local] [MYSQL]
+INSERT INTO `ws_siteviews_online` (`online_startview`, `online_endview`) VALUES ('2017-07-24 04:54:32', '2017-07-27 04:54:23')
+
+[2017-07-24 04:54:38.150] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` WHERE (`online_id`='3') LIMIT 1
+
+[2017-07-24 04:56:37.894] [000007] [local] [MYSQL]
+UPDATE `ws_siteviews_online` SET `online_endview`='2017-07-23 00:59:57' WHERE (`online_id`='1')
+
+[2017-07-24 04:56:37.895] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` WHERE (`online_id`='1') LIMIT 1
+
+[2017-07-24 04:56:52.436] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` LIMIT 0, 1000
+
+[2017-07-24 04:56:52.438] [000007] [local] [MYSQL]
+SHOW COLUMNS FROM `wsphp`.`ws_siteviews_online`
+
+[2017-07-24 04:57:15.584] [000007] [local] [MYSQL]
+INSERT INTO `ws_siteviews_online` (`online_startview`, `online_endview`) VALUES ('2017-07-24 04:57:00', '2017-07-25 04:57:09')
+
+[2017-07-24 04:57:15.959] [000007] [local] [MYSQL]
+SELECT * FROM `ws_siteviews_online` WHERE (`online_id`='4') LIMIT 1
+

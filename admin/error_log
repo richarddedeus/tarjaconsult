@@ -1,0 +1,3 @@
+[12-Sep-2017 18:52:15 UTC] PHP Fatal error:  Call to a member function getError() on null in /home/tarjaco1/public_html/admin/_models/AdminPost.class.php on line 84
+[12-Sep-2017 18:54:03 UTC] PHP Fatal error:  Call to a member function getError() on null in /home/tarjaco1/public_html/admin/_models/AdminPost.class.php on line 84
+[22-Sep-2017 06:24:55 UTC] PHP Fatal error:  Call to a member function getError() on null in /home/tarjaco1/public_html/admin/_models/AdminPost.class.php on line 84
