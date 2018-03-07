@@ -146,9 +146,8 @@ $tpl_empresa = $View->Load('empresa_p');
 
         <aside>
             <div class="aside-banner">
-                <!--300x250-->
-                <a href="http://www.upinside.com.br/campus" title="Campus UpInside - Cursos Profissionais em TI">
-                    <img src="<?= INCLUDE_PATH; ?>/_tmp/banner_large.png" title="Campus UpInside - Cursos Profissionais em TI" alt="Campus UpInside - Cursos Profissionais em TI" />
+                <a href="https://www.000webhost.com/1046422.html" target="_blank">
+                    <img src="https://www.000webhost.com/images/banners/300x250/1.jpg" alt="Web hosting" width="300" height="250" border="0" />
                 </a>
             </div>
 
